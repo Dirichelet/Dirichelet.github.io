@@ -8,11 +8,12 @@
 <script src="https://assets.pyecharts.org/assets/maps/china.js" type="text/javascript"></script>
 </head>
 <body>
-<div class="chart-container" id="b541aa9fc1e94ea58f3ca9c1db7d1de3" style="width:900px; height:500px;"></div>
+<div class="chart-container" id="0e7881852dbe49ccb14676aaa03f2de0" style="width:900px; height:800px;"></div>
 <script>
-        var chart_b541aa9fc1e94ea58f3ca9c1db7d1de3 = echarts.init(
-            document.getElementById('b541aa9fc1e94ea58f3ca9c1db7d1de3'), 'white', {renderer: 'canvas'});
-        var option_b541aa9fc1e94ea58f3ca9c1db7d1de3 = {
+        var chart_0e7881852dbe49ccb14676aaa03f2de0 = echarts.init(
+            document.getElementById('0e7881852dbe49ccb14676aaa03f2de0'), 'white', {renderer: 'canvas'});
+        var option_0e7881852dbe49ccb14676aaa03f2de0 = {
+    "backgroundColor": "white",
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -50,7 +51,7 @@
     "series": [
         {
             "type": "scatter",
-            "name": "\u5e93\u5b58\u53f7\u7801\u6570",
+            "name": "\u5e93\u5b58\u53f7\u7801\u6570\u91cf\u72b6\u6001",
             "coordinateSystem": "geo",
             "symbolSize": 12,
             "data": [
@@ -199,10 +200,10 @@
     "legend": [
         {
             "data": [
-                "\u5e93\u5b58\u53f7\u7801\u6570"
+                "\u5e93\u5b58\u53f7\u7801\u6570\u91cf\u72b6\u6001"
             ],
             "selected": {
-                "\u5e93\u5b58\u53f7\u7801\u6570": true
+                "\u5e93\u5b58\u53f7\u7801\u6570\u91cf\u72b6\u6001": true
             },
             "show": true,
             "padding": 5,
@@ -235,7 +236,7 @@
         "show": true,
         "type": "piecewise",
         "min": 0,
-        "max": 1,
+        "max": 100,
         "inRange": {
             "color": [
                 "#50a3ba",
@@ -250,7 +251,24 @@
         "showLabel": true,
         "itemWidth": 20,
         "itemHeight": 14,
-        "borderWidth": 0
+        "borderWidth": 0,
+        "pieces": [
+            {
+                "value": "\u8f83\u591a",
+                "label": "\u6570\u91cf>100",
+                "color": "#f05b72"
+            },
+            {
+                "value": "\u8db3\u591f",
+                "label": "50<\u6570\u91cf<100",
+                "color": "#f58220"
+            },
+            {
+                "value": "\u8f83\u5c11",
+                "label": "\u6570\u91cf<50",
+                "color": "#006c54"
+            }
+        ]
     },
     "geo": {
         "map": "china",
@@ -258,7 +276,7 @@
         "emphasis": {}
     }
 };
-        chart_b541aa9fc1e94ea58f3ca9c1db7d1de3.setOption(option_b541aa9fc1e94ea58f3ca9c1db7d1de3);
+        chart_0e7881852dbe49ccb14676aaa03f2de0.setOption(option_0e7881852dbe49ccb14676aaa03f2de0);
     </script>
 <a href="/data/sourse.xlsx"><img height="30" src="/img/1.png" width="50"/></a></body>
 </html>
