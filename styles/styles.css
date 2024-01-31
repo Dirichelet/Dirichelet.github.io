@@ -25,3 +25,8 @@ tr:nth-child(even) {
 tr:hover {
     background-color: #ddd;
 }
+/* styles.css */
+button {
+    color: #000000;
+    font-size: 30px;
+}
